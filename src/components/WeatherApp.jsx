@@ -29,7 +29,7 @@ export default function Weather() {
     
     async function getWeather() {
       setLoading(true);
-      const key = import.meta.env.VITE_OPEN_WEATHER_MAP_API_KEY;
+      const key = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
       try {
         const response = await fetch(url);
